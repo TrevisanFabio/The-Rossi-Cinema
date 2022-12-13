@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The rossi Cinema</title>
+    <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <section class="top-bar">
+    <div class="left-content">
+        <h2 class="title">The Rossi Cinema</h2>
+    </div>
+    <div class="right-content">
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa fa-user"></i></button>
+            <div class="dropdown-content">
+              <a onclick="getUser()">Login</a>
+              <a href="register.html">Register</a>
+              <a onclick="areaper()">Area Personale</a>
+              <a onclick="logout()">Logout</a>
+              
+              </div>
+          </div>
+        
+        
+    </div>
+   </section>
+   <section class="main-container">
+    <div class="movie-container">
+        <div class="upcoming-img-box">
+            <img src="images/movie4.jpg" alt="">
+            <p class="upcoming-title" onclick="loaduser()">Film in Arrivo</p>
+            <div class="buttons">
+                <a onclick="gofilm(this)"  id="btn4" value="4" class="btn">Prenota Ora!</a>
+            </div>
+        </div>
+        <br><br>
+        <div class="current-movies">
+            <div class="current-movie">
+            <div class="cm-img-box">
+                <img src="images/movie1.jpg" alt="">
+            </div>
+            <h3 class="movie-title">Jurassic World</h3>
+            <p class="sceen-name">14:30-16:15-19:20</p>
+            <div class="booking">
+                <h2 class="price"></h2>
+                <a  class="btn" id="btn1" value="1" onclick="gofilm(this)">Aquista ora il biglietto!</a>
+            </div>
+        </div>
+
+        <div class="current-movie">  
+            <div class="cm-img-box">
+            <img src="images/movie2.jpg" alt="">
+            </div>
+            <h3 class="movie-title">Il gatto con gli stivali 2 - L'ultimo desiderio</h3>
+            <p class="sceen-name">15:45-17:30-20:20</p>
+            <div class="booking">
+                <h2 class="price"></h2>
+                <a  class="btn" id="btn2" value="2" onclick="gofilm(this)">Aquista ora il biglietto!</a>
+            </div>
+        </div>
+
+        <div class="current-movie">
+            <div class="cm-img-box">
+                <img src="images/movie3.jpg" alt="">
+            </div>
+            <h3 class="movie-title">Black Panther: Wakanda Forever</h3>
+            <p class="sceen-name">13:20-15:10-18:45</p>
+            <div class="booking">
+                <h2 class="price"></h2>
+                <a  class="btn" id="btn3" value="3" onclick="gofilm(this)">Aquista ora il biglietto!</a>
+            </div>
+        </div>
+        </div>
+    </div>
+   </section>
+
+   <script src ="index.js"></script>
+    
+</body>
+</html>
